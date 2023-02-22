@@ -27,3 +27,4 @@ pipeline {
       sh 'docekr push gargimehendale/castone:1.01'
      }
    }
+}

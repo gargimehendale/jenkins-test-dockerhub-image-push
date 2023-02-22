@@ -25,7 +25,7 @@ pipeline {
     steps{
       sh 'docker tag capstone-img:1.01 gargimehendale/capstone:1.01'
       sh 'echo $dockerhub_PSW | docker login -u $dockerhub_USR --password-stdin'
-      sh 'docekr push gargimehendale/castone:1.01'
+      sh 'docker push gargimehendale/castone:1.01'
      }
    }
 }

@@ -7,6 +7,7 @@ pipeline {
    environment {
     dockerhub=credentials('dockerhub')
    }
+  stages{
    stage('build image')
    {
     when{
@@ -27,4 +28,5 @@ pipeline {
       sh 'docekr push gargimehendale/castone:1.01'
      }
    }
+}
 }
